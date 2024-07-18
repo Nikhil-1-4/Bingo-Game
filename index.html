@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo2 Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bingo Game</h1>
+        <div class="player-container">
+            <div id="player1" class="player">
+                <h2>Player 1</h2>
+                <button onclick="toggleBoard('player1-board')">Show/Hide Board</button>
+                <table id="player1-board" class="board"></table>
+            </div>
+            <div id="player2" class="player">
+                <h2>Player 2</h2>
+                <button onclick="toggleBoard('player2-board')">Show/Hide Board</button>
+                <table id="player2-board" class="board"></table>
+            </div>
+        </div>
+        <div class="controls">
+            <p id="turn-msg"> Player 1 Turn</p>
+            <input type="number" id="number-input" min="1" max="25" placeholder="Enter number" />
+            <button id="mark-button">Mark Number</button>
+            <button id="new-game-button">New Game</button>
+        </div>
+        <p id="message"></p>
+    </div>
+    <!-- <div class="rules">
+        <h2>About Game</h2>
+        <div class="info">
+            <p>The Bingo game is an interactive web-based application where two players compete to form five lines of marked numbers on a 5x5 grid. </p>
+            <h3>Rules</h3>
+            <p>
+
+            </p>
+        </div>
+    </div> -->
+    <script src="script.js"></script>
+</body>
+</html>
+
