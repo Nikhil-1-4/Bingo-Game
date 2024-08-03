@@ -129,11 +129,11 @@ document.addEventListener('DOMContentLoaded', () => {
             let a=markNumber(player2Board, number);
             a&=markNumber(player1Board, number);
 
-            if (checkWinner(player1Board)) {
-                message.textContent = 'Player 1 wins!';
-                markButton.disabled = true;
-            } else if (checkWinner(player2Board)) {
+            if (checkWinner(player2Board)) {
                 message.textContent = 'Player 2 wins!';
+                markButton.disabled = true;
+            } else if (checkWinner(player1Board)) {
+                message.textContent = 'Player 1 wins!';
                 markButton.disabled = true;
             } else {
                 message.textContent = '';

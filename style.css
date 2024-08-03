@@ -52,10 +52,20 @@ body {
 }
 
 #message {
-    font-size: 1.2em;
+    font-size: 1.6em;
     font-weight: bold;
 }
-#turn-msg {
-    font-size: 1.2em;
+/* #turn-msg {
+    display:flex;
+    font-size: 1.6em;
     font-weight: bold;
+    background-color: #fff;
+} */
+#turn-msg {
+    /*display: inline-block; /* Change from flex to inline-block */
+    font-size: 1.6em;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 10px; /* Optional: Add padding for better appearance */
+    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
 }
